@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&family=Raleway:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Raleway',sans-serif;
+    color: #777777;
+}
+html,body{
+    margin: 0px;
+    padding:0px;
+}
+.band-name{
+    font-family: 'Oxygen';
+    text-align: center;
+    margin: 0;
+    font-size: 4em;
+    font-weight: normal;
+    color: white;
+}
+.band-name-large{
+    font-size: 7em;
+}
+ul.nav{
+    margin: 0px;
+}
+body{
+    background-color: rgb(231, 231, 231);
+}
+.main-header{
+    background-color: rgba(0, 0, 0,.4);
+    background-image: url(../../main_images/header.jpg);
+    background-blend-mode: multiply;
+    padding-bottom: 30px;
+    background-size: cover;
+}
+.main-nav{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255, 255, 255,.3);    
+}
+.main-nav li{
+    padding: 0 5%;
+}
+.nav a{
+    display: inline-block;
+    padding: .5em;
+    color: white;
+    text-decoration: none;
+}
+.nav a:hover{
+    background-color: rgba(255, 255, 255,.3);
+}
+.nav li{
+    display: inline;
+}
+.content-section{
+    margin: 1em;
+}
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+.section-header{
+    font-family: 'Metal Mania', cursive;
+    font-weight: normal;
+    color: #333333;
+    text-align: center;
+    font-size: 2.5em;
+}
+.about-band-image{
+    float: left;
+    height: 300px;
+    width:300px;
+    margin: 10px;
+    border-radius: 50%;
+}
+.main-footer{
+    background-color: rgb(18, 18, 18);
+    color: white;
+    padding: .25em 0;
+}
+.main-footer-container{
+    display: flex;
+    align-items: center;
+}
+.main-footer-container ul{
+    flex-grow: 1;
+    text-align: right;
+}
+.footer-nav{
+    padding: 0, 0.5em;
+}
+.btn{
+    text-align: center;
+    vertical-align: center;
+    padding: .67em;
+    cursor: pointer;
+}
+.btn-header{
+    margin: .5em 15% 2em 15%;
+    color: white;
+    border: 2px solid rgb(116, 114, 114);
+    background-color: rgba(255, 255, 255,.1);
+    border-radius: 0;
+    font-size: 1.5em;
+    font-weight: lighter;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+.btn-header:hover{
+    background-color: rgba(255, 255, 255,.3);
+}
+.btn-play{
+    display: block;
+    /*only block elements are allowed to have auto margin to overcome the issu3e change the display to block*/
+    margin: 0 auto;
+    color: rgb(116, 114, 114);
+    font-size: 4em;
+    padding: 0;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+table,td,th{
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+table{
+    margin: 0 auto;
+    margin-bottom: 1em;
+
+}
+.table{
+    text-align: center;
+}
+table,.last-row{
+    border-bottom: none;
+}
+th{
+    color: #555;
+}
+.tour-btn{
+    margin-left: 1em;
+}
+.btn-primary{
+    color: white;
+    background-color: rgba(0, 0, 0,.8);
+    border-radius: .3em;
+    border: none;
+    font-weight: bold;
+    padding: 1em;
+}
+
+.btn-primary:hover{
+    background-color: rgba(0, 0, 0,.4);
+
+}
+.shop-item{
+    margin: 30px;
+}
+.shop-item-title{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #333333;
+    margin-bottom: 15px;
+}
+.shop-item-img{
+    height: 250px;
+}
+.shop-item-details{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.shop-item-price{
+    flex-grow: 1;
+}
+.shop-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.cart-header{
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #333333;
+}
+.cart-column{
+    border-bottom: 2px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+.cart-row{
+    display: flex;
+}
+.cart-item{
+    width: 45%;
+}
+.cart-price{
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+}
+.carrt-quant{
+    width: 35%;
+}
+.cart-item-title{
+    color: #333333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+.cart-item-img{
+    width:75px;
+    height: auto;
+    border-radius: 10px;
+}
+.btn-danger{
+    color: white;
+    background-color: #c04d4d;
+    border-radius: .3em;
+    border: none;
+    font-weight: bold;
+}
+.btn-danger:hover{
+    background-color: #864848
+}
+.cart-quantity-input{
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 24px;
+}
+.cart-row:last-child{
+    border-bottom: 2px solid black;
+}
+.cart-row:last-child .cart-column{
+    border: none;
+}
+.cart-total{
+    text-align: end;;
+}
+.cart-total-title{
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+.cart-total-price{
+    color: #333;
+    font-size: 1.1em;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.btn-purchase{
+    display: block;
+    margin: 4px auto 80px auto;
+    font-size: 1.75em;
+}
