@@ -28,7 +28,7 @@ body{
 }
 .main-header{
     background-color: rgba(0, 0, 0,.4);
-    background-image: url(../../main_images/header.jpg);
+    background-image: url(../main_images/header.jpg);
     background-blend-mode: multiply;
     padding-bottom: 30px;
     background-size: cover;

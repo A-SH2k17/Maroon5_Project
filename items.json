@@ -1,0 +1,42 @@
+{
+    "music":[
+        {
+            "id": 1,
+            "name": "Album 1",
+            "price": 1299,
+            "imgName": "jordi.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Album 2",
+            "price": 1399,
+            "imgName": "jane.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Album 3",
+            "price": 2299,
+            "imgName": "v.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Album 4",
+            "price": 1299,
+            "imgName": "red.jpg"
+        }
+    ],
+    "merch":[
+        {
+            "id": 5,
+            "name": "Clock",
+            "price": 1299,
+            "imgName": "clock.jpg"
+        },
+        {
+            "id": 6,
+            "name": "Cup",
+            "price": 1299,
+            "imgName": "cup.png"
+        }
+    ]
+}

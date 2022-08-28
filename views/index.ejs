@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="description" content="This site is the about page for the clone page for maroon 5">
+        <title>Maroon 5| Store</title>
+        <link rel="stylesheet" href="../CSS/style.css" />
+        <script src="https://checkout.stripe.com/checkout.js" defer></script>
+        <script>
+            var stripePublicKey = "<%= stripePublicKey%>" 
+        </script>
+        <script src="store.js" defer></script>
+    </head>
+    <body>
+        <header class="main-header">
+            <nav class="main-nav">
+                <ul class="nav">
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="../About/index.html">ABOUT</a></li>
+                    <li><a href="index.html">STORE</a></li>
+                </ul>
+            </nav>
+            <h1 class="band-name band-name-large">Maroon 5</h1>
+        </header>
+        <section class="content-section container">
+            <h2 class="section-header">Music</h2>
+            <div class="shop-items">
+                <% items.music.forEach(function(item){%>
+                    <div class="shop-item" data-item-id="<%= item.id %>">
+                            <span class="shop-item-title"><%= item.name %></span>
+                        <img src="store_images/<%= item.imgName%>" alt="Album 1" class="shop-item-img">
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">$<%= item.price /100 %></span>
+                            <button role="button" class="btn btn-primary shop-item-btn">Add To Cart</button>
+                        </div>
+                    </div>
+                <% }) %>
+        </section>
+        <section class="content-section container">
+            <h2 class="section-header">Merch</h2>
+            <div class="shop-items">
+                <% items.merch.forEach(function(item){ %>
+                    <div class="shop-item"  data-item-id="<%= item.id%>">
+                            <span class="shop-item-title"><%=item.name%></span>
+                        <img src="store_images/<%=item.imgName%>" alt="clock" width="225" height="225" class="shop-item-img">
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">$<%= item.price / 100%></span>
+                            <button role="button" class="btn btn-primary shop-item-btn">Add To Cart</button>
+                        </div>
+                    </div>
+                <% }) %>
+        </section>
+        <section class="container content-section">
+            <h2 class="section-header">Cart</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">Item</span>
+                <span class="cart-price cart-header cart-column">Price</span>
+                <span class="cart-quant cart-header cart-column">Quantity</span>
+            </div>
+            <div class="cart-items">
+                
+            </div>
+                <div class="cart-total">
+                    <strong class="cart-total-title">Total</strong>
+                    <span class="cart-total-price" >$0</span>
+                </div>
+                <button role="button" class="btn btn-primary btn-purchase">Purchase</button>
+        </section>
+        <footer class="main-footer">
+            <div class="main-footer-container">
+                <h3 class="band-name">Maroon 5</h3>
+            <ul class="nav footer-nav">
+                <li>
+                   <a href="https://www.youtube.com/channel/UCBVjMGOIkavEAhyqpxJ73Dw" target="_blank" rel="noopener noreferrer">
+                        <img src="../main_images/ytube.png" alt="Youtube Logo" width="50" height="50" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/maroon5" target="_blank" rel="noopener noreferrer">
+                        <img src="../main_images/Meta-Symbol.png" alt="Meta Logo" width="100" height="50">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://open.spotify.com/artist/04gDigrS5kc9YWfZHwBETP" target="_blank" rel="noopener noreferrer">
+                        <img src="../main_images/spotify.png" alt="Spotify Logo" width="50" height="50">
+                    </a>
+                </li>
+            </ul>
+            </div>
+        </footer>
+    </body>
+</html>
